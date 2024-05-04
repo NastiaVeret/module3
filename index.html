@@ -1,0 +1,70 @@
+<!DOCTYPE >
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <div id="food">
+                FOOD, LLC
+            </div>
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <!-- Start of Responsive integrate Icon -->
+            <div id="integrate" class="mobile-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <ul id="navbar__list" class="mobile__nav toggle-show"></ul>
+        </nav>
+    </header>
+    <main>
+        <header class="main__hero">
+            <h1>Our Menu</h1>
+        </header>
+        <section id="section1" data-nav="Chicken" class="your-active-class">
+            <div class="landing__container">
+                <h2>Chicken</h2>
+                <p>Chickens come in various breeds, each with unique characteristics. They progress through different life stages, starting as eggs, hatching into chicks, and maturing into pullets (young hens) and cockerels (young roosters). Hens typically
+                    begin laying eggs at around 5-6 months old, with egg production influenced by factors like breed and environment. Roosters, the male chickens, play a role in fertilizing eggs and exhibit behaviors like crowing to establish territory.
+                    Molting is a natural process where chickens shed and regrow feathers, occurring annually and affecting egg production temporarily..</p>
+            </div>
+        </section>
+        <section id="section2" data-nav="Beef">
+            <div class="landing__container">
+                <h2>Beef</h2>
+                <p>Beef, derived from cattle such as cows and bulls, is a globally consumed meat. It's available in various cuts, each with distinct qualities for flavor and texture. Rich in protein, vitamins, and minerals like iron and zinc, beef also contains
+                    saturated fats and cholesterol, requiring moderate consumption. Grading systems classify beef based on marbling, color, and texture, aiding quality assessment. Cooking methods vary from grilling to stewing, depending on the cut and
+                    desired doneness. Cattle farming encompasses breeding, feeding, and care, with practices ranging from traditional pastures to modern feedlots.</p>
+            </div>
+        </section>
+        <section id="section3" data-nav="Sushi">
+            <div class="landing__container">
+                <h2>Sushi</h2>
+                <p>Sushi is a traditional Japanese dish known for its vinegared rice served with a variety of ingredients, including seafood, vegetables, and occasionally fruits. Types of sushi include nigiri, maki, sashimi, temaki, and chirashi, each offering
+                    a unique combination of flavors and textures. Ingredients in sushi range from raw or cooked seafood like tuna, salmon, and shrimp to vegetables such as cucumber, avocado, and pickled radish. Sushi rice is seasoned with a mixture of
+                    rice vinegar, sugar, and salt, giving it a distinctive sweet and tangy taste.</p>
+            </div>
+    </main>
+    <footer class="page__footer">
+        <p>&copy Udacity</p>
+    </footer>
+
+    <div class="scroll-top">
+        <a class="scroll-top-link" href="#">&#8593;</a>
+    </div>
+    <!-- JavaScript file -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
